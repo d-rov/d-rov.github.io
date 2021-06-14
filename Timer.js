@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
+'use strict';
 
-class Timer extends Component {
+const e = React.createElement;
+
+class Timer extends React.Component {
     state = {
         timerOn: false,
         timerStart: 0,
@@ -38,4 +40,5 @@ class Timer extends Component {
     }
 }
 
-export default Timer;
+cosnt domContainer = document.querySelector('#root');
+ReactDOM.render(e(Timer), domContainer);
