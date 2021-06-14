@@ -40,5 +40,5 @@ class Timer extends React.Component {
     }
 }
 
-cosnt domContainer = document.querySelector('#root');
+const domContainer = document.querySelector('#root');
 ReactDOM.render(e(Timer), domContainer);
